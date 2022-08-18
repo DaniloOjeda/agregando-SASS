@@ -2,52 +2,94 @@
 <html lang="en">
 
     <head>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- link cdn de css bootsrap  -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+       <!-- link css PURO-->
         <link rel="stylesheet" href="./estilos/estilos.css">
         <title>eldespertar</title>
 
     </head>
-     
-    <div class="contenedorlogo"></div>
-
     <body>
         <header>
-            <div class="imgLotto">
-                <img src="./images/logo_lotto.png" data-aos="fade-right" alt="imagen loto">
-            </div>   
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html">home</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/meditacion.html">meditacion</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/terapiasalternativas.html">terapias alternativas</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/blog.html">blog</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/contacto.html">contacto</a>
-                    </li>
-                </ul>
-            </nav>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light;">
+                <div class="container-fluid">
+                  <a class="navbar-brand ms-5" href="index.html">
+                    <img class="w-50" src="./images/logo_lotto.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button bg-light" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/meditacion.html">Meditacion</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/terapiasalternativas.html">Terapias alternativas</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/blog.html">Blog</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link active" href="./secciones/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+             
         </header>
         <main>
-            <section class="caminoInterior">
-                <h1>Camino hacia el interior</h1>          
-                <div class="mujerMeditando">
-                    <img src="./images/07ff65dc-c54f-4f60-add9-cf47f6bcce95.png" alt="mujer meditando en un lago">
+            <div class="container1 mt-5">
+                <h1 class="text-center">Camino hacia el interior</h1>
+            </div>
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
-                <h2>¿Comenzamos?</h2>
-                <div class="parrafoViaje">
-                  <p>Es hora de emprender este viaje al despertar de conciencia, hacia nuestro ser interior. 
+                <div class="carousel-inner me-5">
+                  <div class="carousel-item active">
+                    <img src="images/07ff65dc-c54f-4f60-add9-cf47f6bcce95.png" class="d-block w-100 altura" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Busca en tu interior</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/44.jpg" class="d-block w-100 altura" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Conectate con la naturalezah5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/liberate.webp" class="d-block w-100 altura" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Liberate</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+                <div class="container2 mt-5">
+                   <h2 class="text-center">¿Comenzamos?</h2>
+                   <p class="text-center ms-5 me-5 ">Es hora de emprender este viaje al despertar de conciencia, hacia nuestro ser interior. 
                    Al encontrarlo nos hace seres realmente conscientes de todo lo que sentimos y percibimos, porque nos
                    conectamos con esa energía tan poderosa que está en nosotros sintiendo esa grandeza de nuestro ser.
                    A medida que nos conocemos nos volvemos mas compasivos, trasmitiendo la mejor versión de nosotros mismos,
@@ -58,38 +100,25 @@
                    cambios internos en nosotros mismos equilibrando nuestra mente y conectándonos con ese ser interior que
                    todos llevamos dentro. Si te animas, yo sere tu guia para que comiences este apasionante camino hacian el descubrimiento tu ser interior</p>
                 </div>
-            </section>          
+                  
+                   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+                   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>        
         </main> 
-        <footer>
-                <ul>
-                    <li>
-                        <a href="index.html">home</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/meditacion.html">meditacion</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/terapiasalternativas.html">terapias alternativas</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/blog.html">blog</a>
-                    </li>
-                    <li>
-                        <a href="./secciones/contacto.html">contacto</a>
-                    </li>
-                </ul>
-                          
-            <div class="iconoRedes">
-               <div>
-                    <img src="./images/icons8-facebook-rodeado-de-círculo.svg" alt="iconofacebook">
-               </div>
-               <div>
-                    <img src="./images/icons8-instagram.svg" alt="iconoinstagram">
-               </div>
-            </div> 
+        <footer>             
+          <div class="container6 bg-secondary mt-5">
+            <div class="row p-5">
+                <div class="col-12 col-md-8 col-md-8 text-left">
+                    <p>Copiright Danilo Ojeda</p>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4 text-center">
+                    <img src="images/facebook.png" alt="facebook"></a>
+                    <img src="images/youtube.png" alt="youtube"></a>
+                    <img src="images/instagram.png" alt="instaram"></a>
+                </div>
+            </div>
+        </div>
         </footer> 
-        <script>
-            AOS.init();
-          </script>
+        <!-- scrip de bundle -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     </body>
 </html>
