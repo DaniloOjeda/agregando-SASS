@@ -1,0 +1,25 @@
+@import "fuentes";
+@import "generales";
+@import "navbar";
+@import "hermanos";
+@import "footer";
+
+
+.altura {
+    height: 50rem;
+}
+
+.meditacion{
+    padding: 0 5px;
+    margin: 5px 100px;
+    h3{
+        display: flex;
+        justify-content: center;
+        padding: 10px 0; 
+    }
+    p{
+        margin-top: 20px;
+
+    }   
+}
+
